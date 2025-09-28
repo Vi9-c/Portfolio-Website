@@ -1,0 +1,834 @@
+* {
+  margin: 0;
+  border: 0;
+  margin: 0.5rem;
+}
+:root {
+  --primary-color: #04151f;
+  --secondary-color: #183a37;
+  --background-color: #efd6ac;
+  --quaternary-color: #c44900;
+  --nav-color: #432534;
+}
+@font-face {
+  font-family: "borger";
+  src: url(./borger-150173/Borger-7ORdP.ttf);
+}
+body {
+  background-color: #efd6ac;
+  margin: 0rem;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+  font-family: borger;
+  color: #183a37;
+}
+a:hover{
+  color: #c44900;
+  transition: 0.3s ease-in-out;
+}
+.nav-links li:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+}
+.visit {
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+.visit > a {
+  text-decoration: underline;
+  color: #c44900;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+.visit:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.nav-links {
+  display: flex;
+  align-self: center;
+  /* justify-self: end; */
+}
+.nav-menu {
+  display: grid;
+  grid-template-columns: 35rem 1fr 10rem;
+}
+.take-icon {
+  margin-right: 0rem;
+  margin-left: 0rem;
+  margin-bottom: 0rem;
+}
+.container {
+  margin: 0rem;
+}
+.welcome {
+  display: grid;
+  grid-template-areas:
+    "one two two five"
+    "one three three five"
+    "one four four five";
+  grid-template-rows: 25vh 0.5fr 0.89fr;
+  margin: 0rem;
+}
+.content:nth-child(1) {
+  grid-area: one;
+}
+.content:nth-child(2) {
+  grid-area: two;
+  align-items: center;
+  margin-left: 4rem;
+  font-family: borger;
+  color: #183a37;
+}
+.content:nth-child(3) {
+  grid-area: three;
+  align-self: center;
+  color: #183a37;
+  font-family: borger;
+  margin-bottom: 0.5rem;
+}
+.content:nth-child(4) {
+  grid-area: four;
+  align-self: center;
+}
+.content:nth-child(5) {
+  grid-area: five;
+  justify-self: center;
+}
+.fuc {
+  font-size: 3rem;
+}
+.display-text > h1 {
+  font-size: 6rem;
+  letter-spacing: 1.5rem;
+  color: #04151f;
+}
+.display-text > p > em {
+  font-size: 2rem;
+  color: #c44900;
+}
+.two-texts {
+  display: flex;
+  font-family: borger;
+  gap: 1.5rem;
+  justify-content: start;
+}
+.weird-text {
+  margin-top: 1rem;
+  width: 0.8rem;
+  justify-self: center;
+}
+.me-icon {
+  margin-right: 0rem;
+  margin-left: 0rem;
+  margin-bottom: 0rem;
+}
+.me {
+  margin: 0rem;
+}
+.that-picture {
+  margin: 0rem;
+  width: 30.5rem;
+}
+.down > a {
+  text-decoration: underline;
+  color: #c44900;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+.about {
+  margin-top: 5rem;
+  display: grid;
+  font-family: borger;
+  grid-template-columns: 2fr 1.7fr 2fr;
+  min-height: 10vh;
+  gap: 5rem;
+  padding: 4rem;
+  text-align: center;
+  justify-self: center;
+  background-color: rgba(255, 255, 255, 0.135);
+  color: #183a37;
+}
+.col-1 {
+  text-align: left;
+  /* padding: 0rem 2rem; */
+}
+.col-1 > h1 {
+  font-size: 2.5rem;
+}
+.col-1 > p {
+  margin-top: 2rem;
+  /* line-height: 1.5rem; */
+}
+#first-column-icon {
+  opacity: 40%;
+  /* width: 15rem; */
+  /* margin-left: 3rem; */
+  margin-top: 5rem;
+}
+.col-2 {
+  background-color: #ffffff69;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.col-2 > h1 {
+  font-size: 4rem;
+}
+.col-2 > p {
+  margin: 1.5rem 1rem;
+}
+.second-column-image {
+  width: 20rem;
+  border-radius: 0.5rem;
+}
+.col-3 {
+  text-align: center;
+}
+.col-3 > img {
+  width: 15rem;
+  border-radius: 1rem;
+}
+.ul {
+  margin-top: 5rem;
+}
+.ul li {
+  list-style-image: url(marker.svg);
+  list-style-position: inside;
+  margin-top: 2rem;
+  text-align: center;
+}
+.projects {
+  background-color: rgba(255, 255, 255, 0.135);
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 5rem;
+  font-family: borger;
+}
+.projects h1 {
+  color: #183a37;
+}
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin: 1.5rem 1.5rem 1.5rem 0;
+}
+.portfolio img {
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.portfolio img:hover{
+  transform: scale(1.1);
+  transition: 1s ease-in;
+}
+.sidebar,
+ul {
+  position: fixed;
+  padding: 0rem;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 15.6rem;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.001);
+  backdrop-filter: blur(1rem);
+  box-shadow: -0.6rem 0 0.6rem rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+ul a {
+  width: 100%;
+}
+.nav-menu > li {
+  justify-self: center;
+  align-self: center;
+}
+.nav-menu > li img {
+  width: 2rem;
+  display: none;
+  cursor: pointer;
+}
+.sidebar ul> li {
+  width: 2rem;
+}
+.sidebar ul,li:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+}
+.close {
+  cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 500px) {
+  .weird-text {
+    width: 0.7rem;
+    justify-self: center;
+    margin-top: 2rem;
+  }
+  .welcome {
+    display: grid;
+    grid-template-areas:
+      "one two two"
+      "one five five"
+      "one three three"
+      "one four four";
+    grid-template-rows: 13vh 1fr 0.6fr;
+    grid-template-columns: 0.1fr 0.5fr 0.5fr;
+    margin: 0rem;
+  }
+  #second-column-icon {
+    width: 5rem;
+  }
+  .fuc {
+    font-size: 1.5rem;
+    margin: 0rem;
+  }
+  .two-texts {
+    font-size: 0.7rem;
+    padding: 0rem;
+  }
+  .first > p,
+  .second > p {
+    margin: 0rem;
+  }
+  .display-text {
+    justify-self: center;
+  }
+  .display-text > h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+  }
+  .down {
+    justify-self: center;
+  }
+  .content:nth-child(1) {
+    justify-self: center;
+    margin: 0rem;
+    grid-column-start: 2 5;
+  }
+  .content:nth-child(2) {
+    justify-self: center;
+    margin: 0rem;
+  }
+  /*.content:nth-child(3) {
+    grid-area: three;
+    align-self: start;
+    color: #183a37;
+    font-family: borger;
+  }
+  /*.content:nth-child(4) {
+    grid-area: four;
+  }
+  .content:nth-child(5) {
+    grid-area: five;
+    justify-self: center;
+    align-self: center;
+  }*/
+  .that-picture {
+    width: 15rem;
+  }
+  .portfolio {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .portfolio > div {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .col-1 {
+    text-align: center;
+  }
+  .portfolio img {
+    width: 100%;
+    height: auto;
+  }
+  .about {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer a {
+    justify-items: center;
+  }
+}
+.project1 img {
+  width: 21rem;
+}
+.project2 img {
+  width: 20rem;
+}
+.project3 img {
+  width: 22rem;
+}
+.contact {
+  text-align: center;
+  background-image: url(contact-back.jpg);
+  font-family: borger;
+  color: #efd6ac;
+  padding: 1rem;
+  margin-top: 5rem;
+  border-radius: 4rem;
+}
+.talk a {
+  color: #c44900;
+  text-decoration: underline;
+  color: #c44900;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+.talk:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+}
+.contact h1,
+p {
+  margin: 1.5rem;
+}
+.inside-the-contact {
+  margin: 4rem;
+}
+.pre-footer {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.442);
+  align-content: center;
+  font-family: borger;
+  color: #183a37;
+  padding: 1rem;
+  margin-top: 5rem;
+  min-height: 40vh;
+}
+.book a {
+  text-decoration: underline;
+  color: #c44900;
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+.book:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.4s ease-in;
+}
+.book img {
+  margin-right: 0rem;
+  margin-left: 0rem;
+  margin-bottom: 0rem;
+}
+.talk,
+.book {
+  margin-top: 3rem;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  min-height: 30vh;
+  background-color: #04151f;
+}
+.footer a {
+  color: #c44900;
+}
+.footer a:hover {
+  color: #efd6ac;
+  cursor: pointer;
+}
+.footer .mail {
+  color: #c44900;
+  align-self: center;
+}
+
+/* Media query for medium screens */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .nav-links {
+    display: none;
+    align-self: center;
+    /* justify-self: center; */
+  }
+  .nav-menu > li img {
+    width: 2rem;
+    display: block;
+  }
+  .logo {
+    justify-self: start;
+  }
+  .visit {
+    display: none;
+  }
+  .nav-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: end;
+  }
+  .nav-menu > li {
+    justify-self: end;
+    align-self: flex-start;
+    margin-top: 0rem;
+    /* margin-bottom: 12rem; */
+  }
+  .weird-text {
+    width: 0.7rem;
+    justify-self: center;
+  }
+  .welcome {
+    display: grid;
+    grid-template-areas:
+      "one two two five"
+      "one three three five"
+      "one four four five";
+    grid-template-rows: 29vh 1fr 0.2fr;
+    margin: 0rem;
+  }
+  .fuc {
+    font-size: 3rem;
+  }
+  .display-text > h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  .content:nth-child(2) {
+    grid-area: two;
+    align-items: start;
+    font-size: 1rem;
+    margin-left: 0rem;
+    font-family: borger;
+    padding: 0rem;
+    margin: 0rem;
+    gap: 0rem;
+    color: #183a37;
+  }
+  .content:nth-child(3) {
+    grid-area: three;
+    align-self: start;
+    justify-self: center;
+    color: #183a37;
+    font-family: borger;
+  }
+  .content:nth-child(4) {
+    grid-area: four;
+  }
+  .content:nth-child(5) {
+    grid-area: five;
+    justify-self: center;
+    align-self: center;
+  }
+  .that-picture {
+    width: 24rem;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem;
+  }
+  .col-1 h1 {
+    text-align: center;
+  }
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    text-align: center;
+  }
+  .col-3 {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  .project3 {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 3rem;
+    min-height: fit-content;
+  }
+  .footer .mail {
+    font-size: 0.8rem;
+    max-width: 100%;
+    word-break: break-word;
+  }
+}
+@media (min-width: 500px) and (max-width: 769px) {
+  .nav-links {
+    display: none;
+    align-self: center;
+    /* justify-self: center; */
+  }
+  .nav-menu > li img {
+    width: 2rem;
+    display: block;
+  }
+  .logo {
+    justify-self: start;
+  }
+  .visit {
+    display: none;
+  }
+  .nav-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: end;
+  }
+  .nav-menu > li {
+    justify-self: end;
+    align-self: flex-start;
+    margin-top: 0rem;
+    /* margin-bottom: 12rem; */
+  }
+  .weird-text {
+    width: 1rem;
+    justify-self: center;
+    margin-top: 2rem;
+  }
+  .welcome {
+    display: grid;
+    grid-template-areas:
+      "one two two"
+      "one five five"
+      "one three three"
+      "one four four";
+    grid-template-rows: 21vh 1fr 0.6fr;
+    grid-template-columns: 0.1fr 0.5fr 0.5fr;
+    margin: 0rem;
+  }
+  #second-column-icon {
+    width: 5rem;
+  }
+  .fuc {
+    font-size: 3rem;
+  }
+  .display-text {
+    justify-self: center;
+  }
+  .display-text > h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
+  .down {
+    justify-self: center;
+  }
+  .content:nth-child(1) {
+    justify-self: center;
+    margin: 0rem;
+    grid-column-start: 2 5;
+  }
+  .content:nth-child(2) {
+    justify-self: center;
+    margin: 0rem;
+  }
+  .that-picture {
+    width: 24rem;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem;
+  }
+  .col-1 h1 {
+    text-align: center;
+  }
+  .col-1 p {
+    text-align: center;
+  }
+  .portfolio {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+  }
+  .project1 {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .projects,
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .col-3 {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  .project3 img {
+    width: 20rem;
+  }
+  .project3 {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3rem;
+    min-height: fit-content;
+  }
+  .footer .nav-links {
+    display: block;
+    text-align: center;
+    align-items: center;
+  }
+  .footer .mail {
+    font-size: 0.5rem;
+    max-width: 100%;
+    word-break: break-word;
+  }
+}
+@media (min-width: 300px) and (max-width: 500px) {
+  .nav-links {
+    display: none;
+    align-self: center;
+    /* justify-self: center; */
+  }
+  .nav-menu > li img {
+    width: 2rem;
+    display: block;
+  }
+  .logo {
+    justify-self: start;
+  }
+  .visit {
+    display: none;
+  }
+  .nav-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: end;
+  }
+  .nav-menu > li {
+    justify-self: end;
+    align-self: flex-start;
+    margin-top: 0rem;
+    /* margin-bottom: 12rem; */
+  }
+  .fuc {
+    font-size: 2.5rem;
+  }
+  .display-text {
+    justify-self: center;
+  }
+  .display-text > h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
+  .down {
+    justify-self: center;
+  }
+  .content:nth-child(1) {
+    justify-self: center;
+    margin: 0rem;
+    grid-column-start: 2 5;
+  }
+  .content:nth-child(2) {
+    justify-self: center;
+    margin: 0rem;
+  }
+  .that-picture {
+    width: 20rem;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem;
+  }
+  .col-1 h1 {
+    text-align: center;
+  }
+  .col-1 p {
+    text-align: center;
+  }
+  .second-column-image {
+    width: 15rem;
+    border-radius: 0.5rem;
+  }
+  .portfolio {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 0rem;
+    margin: auto;
+  }
+  .project1 img {
+    width: 13rem;
+  }
+  .project2 img {
+    width: 13rem;
+  }
+  .project3 img {
+    width: 13rem;
+  }
+  .project1 {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .projects {
+    padding: 0rem;
+  }
+  .portfolio > img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  .contact {
+    text-align: center;
+    background-image: url(contact-back.jpg);
+    font-family: borger;
+    color: #efd6ac;
+    padding: 0.1rem;
+    margin-top: 5rem;
+    border-radius: 4rem;
+  }
+  .inside-the-contact,
+  p h1 {
+    font-size: 1.5rem;
+    margin: 0rem;
+    padding: 0.5rem;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: fit-content;
+  }
+  .footer .nav-links {
+    display: block;
+    text-align: center;
+    align-items: center;
+  }
+  .footer .mail {
+    font-size: 0.4rem;
+    max-width: 100%;
+    word-break: break-word;
+  }
+}
